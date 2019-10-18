@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CatagoryScreen">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:rowCount="5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/temaki"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_column="0"
+            android:layout_gravity="start"
+            android:background="@drawable/temaki"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/category_temaki"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/uramaki"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:background="@drawable/uramaki"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/category_uramaki"
+            android:textColor="@color/colorWhite"
+            android:translationX="25dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/maki"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="1"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:background="@drawable/maki"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/category_maki"
+            android:textColor="@color/colorWhite"
+            android:translationX="25dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/warme_gerechten"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="0"
+            android:layout_gravity="start"
+            android:background="@drawable/warmegerechten"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/category_warme_gerechten"
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/nigiri"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="start"
+            android:background="@drawable/nigiri"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/category_nigiri"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/surimi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="end"
+            android:text="@string/category_surimi"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorWhite"/>
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

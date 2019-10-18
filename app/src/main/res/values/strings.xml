@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sushi App</string>
+    <string name="landingspage_button">Stel je bestelling samen</string>
+    <string name="category_temaki">Temaki</string>
+    <string name="category_uramaki">Uramaki</string>
+    <string name="category_maki">Maki</string>
+    <string name="category_warme_gerechten">Warme gerechten</string>
+    <string name="category_nigiri">Nigiri</string>
+    <string name="category_surimi">Surimi</string>
+</resources>
