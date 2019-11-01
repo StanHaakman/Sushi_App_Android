@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#8F8F8F"
     tools:context=".CatagoryScreen">
 
     <GridLayout
@@ -110,21 +110,24 @@
 
         <ImageView
             android:id="@+id/category_temaki"
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_width="181dp"
+            android:layout_height="279dp"
             android:layout_row="0"
             android:layout_rowSpan="2"
             android:layout_column="0"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_temaki"
+            android:onClick="category_temaki"
             app:srcCompat="@drawable/temaki"
             tools:srcCompat="@drawable/temaki" />
 
         <ImageView
             android:id="@+id/category_uramaki"
-            android:layout_width="183dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="1"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_uramaki"
             android:scaleType="center"
             app:srcCompat="@drawable/uramaki"
@@ -132,11 +135,13 @@
 
         <ImageView
             android:id="@+id/category_maki"
-            android:layout_width="183dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="1"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_maki"
+            android:cropToPadding="false"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/maki" />
 
@@ -147,6 +152,7 @@
             android:layout_row="2"
             android:layout_column="0"
             android:layout_columnSpan="2"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_warme_gerechten"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/warmegerechten" />
@@ -157,6 +163,7 @@
             android:layout_height="wrap_content"
             android:layout_row="3"
             android:layout_column="0"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_nigiri"
             app:srcCompat="@drawable/nigiri" />
 
@@ -166,9 +173,22 @@
             android:layout_height="117dp"
             android:layout_row="3"
             android:layout_column="1"
+            android:background="#DFDDDD"
             android:contentDescription="@string/category_sashimi"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/sashimi" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/catrgory_title"
+        android:textColor="#DFDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
